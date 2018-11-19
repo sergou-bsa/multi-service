@@ -1,0 +1,17 @@
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+  background-color: #e1f5e7;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.loading-message, .info-message {
+  border: 1px solid gray;
+  background-color: gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+}
+

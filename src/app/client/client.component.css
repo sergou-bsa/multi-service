@@ -1,0 +1,14 @@
+.main {
+  margin: 0 auto;
+}
+.client-content {
+  width: 960px;
+  margin: 0 auto;
+}
+.header-wrapp {
+  background: url(../../assets/images/bg/bg-header.png) repeat-x center top;
+}
+.footer-wrapp {
+  background: url(../../assets/images/bg/bg-footer.png) repeat-x center top;
+  clear: both;
+}

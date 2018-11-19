@@ -1,0 +1,36 @@
+.adm-sidebar-menu {
+  background-color: #2F6A96;
+  list-style: none;
+  font-size: 15px;
+  margin: 0;
+  padding: 8px 0 1px;
+}
+.adm-sidebar-menu li {
+  border-radius: 5px;
+  background-color: #4597D6;
+  text-align: center;
+  margin-bottom: 7px;
+}
+.adm-sidebar-menu li a {
+  display: block;
+  padding: 5px 0;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.adm-sidebar-menu li a:hover {
+  border-radius: 3px;
+  background-color: #195294;
+}
+.adm-sidebar-menu ul {
+  display: none;
+  position: relative;
+  left: -40px;
+  width: 100%;
+}
+.adm-sidebar-menu li:hover ul {
+  display: block;
+}
+.adm-sidebar-menu ul li {
+  list-style: none;
+  margin-left: 0;
+}

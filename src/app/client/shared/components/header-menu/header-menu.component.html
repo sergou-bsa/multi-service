@@ -1,0 +1,35 @@
+<ul class="client-menu">
+  <li>
+    <a [routerLink]="['/home']">Главная</a>
+  </li>
+  <li>
+    <a [routerLink]="['/it-infrastructure']">IT-инфраструктура</a>
+    <ul class="cm-ul2">
+      <li *ngFor="let itemMenu of menuItInfrastructure"><a href="{{itemMenu.id}}">{{itemMenu.title}}</a></li>
+    </ul>
+  </li>
+  <li>
+    <a [routerLink]="['/service-support']">Сервисная поддержка</a>
+    <ul class="cm-ul3">
+      <li *ngFor="let itemMenu of menuServiceSupport"><a href="{{itemMenu.id}}">{{itemMenu.title}}</a></li>
+    </ul>
+  </li>
+  <li>
+    <a [routerLink]="['/legal-entities']">Юридическим лицам</a>
+    <ul  class="cm-ul4">
+      <li><a href="#">Акция!!!</a></li>
+    </ul>
+  </li>
+  <li>
+    <a [routerLink]="['/individuals']">Физическим лицам</a>
+    <ul  class="cm-ul5">
+      <li><a href="#">Оставить заявку</a></li>
+      <li><a href="#">Резюме</a></li>
+    </ul>
+  </li>
+  <li>
+    <a [routerLink]="['/contacts']">Контакты</a>
+  </li>
+</ul>
+<div class="loading-message" *ngIf="!isLoadedPage">Loading ...</div>
+<!--<div class="{{message.type}}" *ngIf="message.text">{{message.text}}</div>-->

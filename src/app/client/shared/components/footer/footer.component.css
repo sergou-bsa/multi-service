@@ -1,0 +1,16 @@
+.client-footer {
+  width: 960px;
+  height: 137px;
+  margin: 0 auto;
+}
+.client-footer-left, .client-footer-right {
+  margin-top: 55px;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.client-footer-left {
+  float: left;
+}
+.client-footer-right {
+  float: right;
+}

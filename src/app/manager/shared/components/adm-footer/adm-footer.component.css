@@ -1,0 +1,16 @@
+.adm-footer {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+}
+.adm-footer-left, .adm-footer-right {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+.adm-footer-left {
+  float: left;
+}
+.adm-footer-right {
+  float: right;
+}

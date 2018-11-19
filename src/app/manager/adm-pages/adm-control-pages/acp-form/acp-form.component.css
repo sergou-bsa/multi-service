@@ -1,0 +1,13 @@
+.block-title {
+  background-color: #4597D6;
+  padding : 8px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.block-view-title {
+  cursor: pointer;
+}
+.btn-form {
+  margin-bottom: 20px;
+}

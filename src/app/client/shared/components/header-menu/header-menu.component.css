@@ -1,0 +1,48 @@
+.client-menu {
+  background: url(../../../../../assets/images/bg/bg-menu.png) repeat-x;
+  float: left;
+  list-style: none;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+.client-menu li {
+  border-radius: 3px;
+  background-color: #4597D6;
+  float: left;
+  display: block;
+  margin-right: 6px;
+  position: relative;
+}
+.client-menu li a {
+  display: block;
+  padding: 11px 32px 11px 31px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.client-menu li a:hover {
+  border-radius: 3px;
+  background-color: #195294;
+}
+.client-menu ul {
+  position: absolute;
+  left: -9999px;
+}
+.cm-ul2 {
+  width: 847px;
+}
+.cm-ul3 {
+  width: 672px;
+}
+.cm-ul4 {
+  width: 481px;
+}
+.cm-ul5 {
+  width: 296px;
+}
+.client-menu ul li {
+  margin: 5px 10px 5px 0;
+}
+.client-menu li:hover ul {
+  left: -40px;
+}

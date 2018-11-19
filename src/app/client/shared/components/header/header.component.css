@@ -1,0 +1,41 @@
+.client-header {
+  width: 960px;
+  height: 186px;
+  margin: 0 auto;
+}
+.client-header-top {
+  height: 150px;
+}
+.client-header-logo {
+  background: url(../../../../../assets/images/bg/bg-logo.png) no-repeat;
+  width: 270px;
+  height: 115px;
+  margin: 20px 0 0 40px;
+  float: left;
+}
+.client-header-right {
+  margin: 40px 0 0 440px;
+  float: left;
+  color: #165594;
+}
+.client-header-right span{
+  color: #1d9129;
+}
+.client-header-phone {
+  background: url(../../../../../assets/images/bg/bg-phone.png) no-repeat;
+  padding-left: 35px;
+  font-size: 24px;
+}
+.client-header-work {
+  margin-left: 55px;
+  font-size: 12px;
+}
+.client-header-email {
+  background: url(../../../../../assets/images/bg/bg-mail.png) no-repeat;
+  margin-top: 10px;
+  padding-left: 35px;
+  font-size: 18px;
+}
+.client-header-bottom {
+  height: 36px;
+}

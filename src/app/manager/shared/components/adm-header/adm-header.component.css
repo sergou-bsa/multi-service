@@ -1,0 +1,15 @@
+.adm-header {
+  width: 1200px;
+  height: 160px;
+  margin: 0 auto;
+}
+.adm-header-logo {
+  background: url(../../../../../assets/images/bg/bg-logo.png) no-repeat;
+  width: 270px;
+  height: 115px;
+  margin: 20px 0 0 80px;
+  float: left;
+}
+.adm-header-right {
+  float: right;
+}

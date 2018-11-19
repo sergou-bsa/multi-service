@@ -1,0 +1,39 @@
+<div class="block-title block-view-title" *ngIf="!page" title="закрыть" (click)="closeFormPage()">Добавление новой страницы</div>
+<div class="block-title block-view-title" *ngIf="page" title="закрыть" (click)="closeFormPage()">Просмотр записи</div>
+
+<form [formGroup]="form" (submit)="onSubmit()">
+  <div class="field" *ngIf="page">
+    <label for="page-id">Идентификатор страницы</label>
+    <input type="text" id="page-id" disabled formControlName="id"><br />
+  </div>
+  <div class="field">
+    <label for="page-title">Заголовок страницы</label>
+    <input type="text" id="page-title" formControlName="title"><br />
+  </div>
+  <div class="field">
+    <label for="page-description">Краткое описание</label>
+    <input type="text" id="page-description" formControlName="description"><br />
+  </div>
+  <div class="field">
+    <label for="page-text">Полное описание</label>
+    <input type="text" id="page-text" formControlName="text"><br />
+  </div>
+  <div class="field">
+    <label for="page-is-menu">Отображение страницы в меню</label>
+    <input type="checkbox" id="page-is-menu" formControlName="isMenu"><br />
+  </div>
+  <div class="field">
+    <label for="page-is-home">Отображение на главной странице</label>
+    <input type="checkbox" id="page-is-home" formControlName="isHome"><br />
+  </div>
+  <div class="field">
+    <label for="page-section">Раздел меню</label>
+    <input type="text" id="page-section" formControlName="section"><br />
+  </div>
+  <div class="block-title btn-form" *ngIf="!page">
+    <button type="submit" [disabled]="form.invalid">Добавить</button>
+  </div>
+  <div class="block-title btn-form" *ngIf="page">
+    <button type="submit" [disabled]="form.invalid">Редактировать</button>
+  </div>
+</form>

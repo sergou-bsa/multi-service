@@ -1,0 +1,19 @@
+.main {
+  margin: 0 auto;
+}
+.adm-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-content {
+  width: 950px;
+  margin-left: 10px;
+  float: left;
+}
+.header-wrapp {
+  background: url(../../assets/images/bg/bg-adm-header.png) repeat-x center top;
+}
+.footer-wrapp {
+  background-color: #195196;
+  clear: both;
+}
