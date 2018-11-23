@@ -16,12 +16,16 @@ export class PagesControlService extends BaseApi {
     return this.get('admin/get_full_pages.adm.php');
   }
 
-  addPage(): Observable<Page> {
-    return this.post('admin/add_page.adm.php');
+  addPage(pageContent: any): Observable<any> {  // попробовать вместо any - boolean
+    return this.post('admin/add_page.adm.php', pageContent);
   }
 
-  editPage(): Observable<Page> {
-    return this.post('admin/edit_page.adm.php');
+  editPage(pageContent: any): Observable<any> {
+    return this.post('admin/edit_page.adm.php', pageContent);
+  }
+
+  delPage(pageContent: any): Observable<any> {
+    return this.post('admin/del_page.adm.php', pageContent);
   }
 
 /*  getPageById(id: number): Observable<Page> {

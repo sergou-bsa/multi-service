@@ -4,31 +4,38 @@
 <form [formGroup]="form" (submit)="onSubmit()">
   <div class="field" *ngIf="page">
     <label for="page-id">Идентификатор страницы</label>
-    <input type="text" id="page-id" disabled formControlName="id"><br />
+    <input type="text" id="page-id" disabled formControlName="id">
   </div>
   <div class="field">
     <label for="page-title">Заголовок страницы</label>
-    <input type="text" id="page-title" formControlName="title"><br />
+    <input type="text" id="page-title" formControlName="title">
   </div>
-  <div class="field">
-    <label for="page-description">Краткое описание</label>
-    <input type="text" id="page-description" formControlName="description"><br />
+  <div formGroupName="groupIsHomePage">
+    <div class="field">
+      <label for="page-description">Краткое описание</label>
+      <input type="text" id="page-description" formControlName="description">
+    </div>
+    <div class="field">
+      <label for="page-is-home">Отображение на главной странице</label>
+      <input type="checkbox" id="page-is-home" formControlName="isHome">
+    </div>
   </div>
-  <div class="field">
-    <label for="page-text">Полное описание</label>
-    <input type="text" id="page-text" formControlName="text"><br />
-  </div>
-  <div class="field">
-    <label for="page-is-menu">Отображение страницы в меню</label>
-    <input type="checkbox" id="page-is-menu" formControlName="isMenu"><br />
-  </div>
-  <div class="field">
-    <label for="page-is-home">Отображение на главной странице</label>
-    <input type="checkbox" id="page-is-home" formControlName="isHome"><br />
+  <div formGroupName="groupIsMenu">
+    <div class="field">
+      <label for="page-text">Полное описание</label>
+      <textarea id="page-text" formControlName="text"></textarea>
+    </div>
+    <div class="field">
+      <label for="page-is-menu">Отображение страницы в меню</label>
+      <input type="checkbox" id="page-is-menu" formControlName="isMenu">
+    </div>
   </div>
   <div class="field">
     <label for="page-section">Раздел меню</label>
-    <input type="text" id="page-section" formControlName="section"><br />
+    <select id="page-section" formControlName="section">
+      <option disabled value="null" style="display:none;">Выберите раздел меню</option>
+      <option *ngFor="let section of sections" [value]="section.id">{{section.name}}</option>
+    </select>
   </div>
   <div class="block-title btn-form" *ngIf="!page">
     <button type="submit" [disabled]="form.invalid">Добавить</button>

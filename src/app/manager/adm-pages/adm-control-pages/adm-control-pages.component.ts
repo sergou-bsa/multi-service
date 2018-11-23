@@ -45,14 +45,16 @@ export class AdmControlPagesComponent implements OnInit, OnDestroy {
     this.isLoadedForm = false;
     console.log(dataPage);
 
-    this.pagesControlService.addPage();
+    this.subscr2 = this.pagesControlService.addPage(dataPage)
+      .subscribe(data => console.log(data));
   }
 
   editPage(dataPage: Page) {
     this.isLoadedForm = false;
     console.log(dataPage);
 
-    this.pagesControlService.editPage();
+    this.subscr3 = this.pagesControlService.editPage(dataPage)
+      .subscribe(data => console.log(data));
   }
 
   ngOnDestroy() {
